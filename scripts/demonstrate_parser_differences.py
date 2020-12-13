@@ -1,17 +1,18 @@
-"""Demonstrate how different parsers parse the same markup.
+"""異なるパーサが同じマークアップをどのように解析するかをデモンストレーションします。
 
-Beautiful Soup can use any of a number of different parsers. Every
-parser should behave more or less the same on valid markup, and
-Beautiful Soup's unit tests make sure this is the case. But every
-parser handles invalid markup differently. Even different versions of
-the same parser handle invalid markup differently. So instead of unit
-tests I've created this educational demonstration script.
+Beautiful Soupは、異なるパーサーのいずれかを使用することができます。すべての
+パーサは、有効なマークアップに対しては多かれ少なかれ同じ振る舞いをしなければなりません。
+Beautiful Soupのユニットテストは、これを確認しています。しかし、すべての
+パーサは無効なマークアップを異なる方法で処理します。異なるバージョンの
+同じパーサーでも、無効なマークアップの扱いが異なります。そのため、ユニット
+テストがあるにもかかわらず、私はこの教育用デモスクリプトを作成しました。
 
-The file demonstration_markup.txt contains many lines of HTML. This
-script tests each line of markup against every parser you have
-installed, and prints out how each parser sees that markup. This may
-help you choose a parser, or understand why Beautiful Soup presents
-your document the way it does.
+demonstration_markup.txtファイルには何行ものHTMLが含まれています。この
+スクリプトは、マークアップの各行をあなたがインストールしたすべてのパーサに対してテストします。
+各パーサがそのマークアップをどのように見ているかを表示します。これは
+パーサーを選択、
+もしくは、Beautiful Soupの動作の理解に役立ちます。
+
 """
 
 import os
